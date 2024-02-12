@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="shortcut icon" href="./images/alien-svgrepo-com.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title mb-3">Список Клиентов</h1>
+    
+        <form action="#" id="add-form" class="mb-3">
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <input id="name-input" class="form-control" type="text" placeholder="Имя">
+                </div>
+                <div class="col-md-4 mb-2">
+                    <input id="surName-input" class="form-control" type="text" placeholder="Отчество">
+                </div>
+                <div class="col-md-4 mb-2">
+                    <input id="lastName-input" class="form-control" type="text" placeholder="Фамилия">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <input id="age-input" class="form-control" type="number" placeholder="Возраст" min="0">
+                </div>
+                <div class="col-md-4 mb-2">
+                    <input id="hobby-input" class="form-control" type="text" placeholder="Хобби">
+                </div>
+                <div class="col-md-4 mb-2">
+                    <button id="add-button" type="submit" class="btn btn-success btn-block">Добавить пользователя</button>
+                </div>
+            </div>
+        </form>
+    
+        <div class="sortButtons mb-3">
+            <button id="sortBtn-fio" class="btn btn-success mb-2">Сортировка по ФИО</button>
+            <button id="sortBtn-age" class="btn btn-success mb-2">Сортировка по возрасту</button>
+        </div>
+    
+        <form action="#" id="filter-form" class="mb-3">
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <input type="text" id="filterFio-input" class="form-control" placeholder="ФИО">
+                </div>
+                <div class="col-md-6 mb-2">
+                    <input type="text" id="filterHobby-input" class="form-control" placeholder="Хобби">
+                </div>
+            </div>
+        </form>
+    
+        <div id="app" class="table-responsive"></div>
+    </div>
+
+    <script defer src="./js/main.js"></script>
+</body>
+</html>

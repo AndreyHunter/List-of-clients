@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--bs-dark-bg-subtle);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p,
+strong {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin-inline: auto;
+    padding-top: 20px;
+}
+
+.error {
+    display: block;
+    color: rgb(172, 28, 28);
+    font-size: .9rem;
+    margin-top: 3px;
+}
+
+.BtnColor {
+    color: white;
+    padding-inline: 4px;
+    background-color: inherit;
+}
